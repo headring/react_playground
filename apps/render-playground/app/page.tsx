@@ -26,6 +26,12 @@ function Home(props: any) {
   return (
     <div>
       <div>render-playground - devtools render check</div>
+       <input
+          accept="image/*"
+          type="file"
+          id="rasied-image-file"
+          name="qnaImage"
+       /> 
       <ul>
         devtools의 render는 Render Phase를 의미. 자신의 상태가 변경되거나,
         props가 변경되거나, 부모가 변경되어서 하위값들이 render phase 진입

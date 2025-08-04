@@ -6,8 +6,14 @@
     "plugins": [{ "name": "next" }],
     "module": "ESNext",
     "moduleResolution": "Bundler",
-    "allowJs": true,
+    "allowJs": false,
     "jsx": "preserve",
-    "noEmit": true
+    "noEmit": true,
+    "strict": true,
+     "noImplicitAny": true ,
+    "noUnusedLocals": true ,
+    "noUnusedParameters": true ,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true 
   }
 }

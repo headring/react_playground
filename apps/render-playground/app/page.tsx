@@ -1,6 +1,5 @@
 "use client";
 import { memo, useState } from "react";
-import { useRouter } from 'next/navigation'
 const InnerComponent = (props: any) => {
   const { count } = props;
   if (count) {
@@ -22,7 +21,6 @@ const MemoComponent2 = memo((props: { memoCount: number }) => {
 function Home(props: any) {
   const [count, setCount] = useState(0);
   const [memoCount, setMemoCount] = useState(0);
-  const router = useRouter();
 
    const goAppStoreSameTab = () => {
     // 외부 이동은 보통 <a> 권장. 동일 탭 강제라면 location.assign이 더 간결.
@@ -42,7 +40,7 @@ function Home(props: any) {
 
   return (
     <div>
-      <div>render-playground - devtools render check</div>
+      <div>render-playground - devtools render checddk</div>
 
       <input
         accept="image/*"

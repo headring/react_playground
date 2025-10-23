@@ -61,6 +61,10 @@ export default function PageHome() {
   return (
     <Home>
       여기는 children {hoeme} <InnerComponent />{" "}
+
+      <div>카카오톡 버튼 테스트</div>
+      <button onClick={() => window.location.href = "kakaotalk://inappbrowser/close"} > 안드로이드</button>
+      <button onClick={() => window.location.href = "kakaoweb://closeBrowser"} > IOS</button>
     </Home>
   );
 }
